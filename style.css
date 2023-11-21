@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#centeredcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(300, 10px);
+    grid-template-columns: repeat(108, 10px);
+}
+
+#header {
+    background-color: #d3d3d3;
+    grid-row: 1/8;
+    grid-column: 1/193;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#leftbutin {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    list-style: none;
+}
+
+#rightbutin {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 10px;
+    list-style: none;
+}
+
+#leftbutin li {
+    margin-right: 30px;
+    margin-top: 28px;
+}
+
+#rightbutin li {
+    margin-right: 10px;
+    margin-top: 28px;
+}
+
+#logo {
+    grid-row: 86/190;
+    margin: 0, auto;
+}
+
+#leftbutzone {
+    background-color: aquamarine;
+    width: 265px;
+}
+
+#rightbutzone {
+    background-color: #c8f315;
+    width: 265px;
+}
+
+#slideshow {
+    background-color: #d3d3d3;
+    grid-row: 10 / 65;
+    grid-column: 1/193 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#leftbanner {
+    background-color: blue;
+    grid-column: 6.2%;
+    grid-row: 10 / 65;
+    justify-self: start;
+}
+
+#centerwindow {
+    background-color: green;
+    grid-column: 83.3%;
+    grid-row: 10 / 65;
+    min-width: 500px;
+    justify-self: center;
+}
+
+#rightbanner {
+    background-color: darkblue;
+    grid-column: 6.2%;
+    grid-row: 10 / 65;
+    justify-self: end;
+}
+
+#searchbar {
+    grid-row: 68 / 73;
+    grid-column: 21 / 89;
+    border: 3px solid #00aeff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-search {
+    color: #00aeff;; /* 돋보기 아이콘 색상 설정 */
+    margin: 10px;
+}
+
+
+#searchbox {
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius : 8px;
+    padding : 10px 10px;
+    font-size : 16px;
+}
+
+#search-icon {
+    display : flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    left: 10px;
+}
+
+#tagzone {
+    background-color: orange;
+    grid-row: 76 / 89;
+    grid-column: 13 / 97;
+    display: flex;
+    flex-direction: row;
+}
+
+#tagzone li {
+    font-size: 20px;
+}
+
+#detailzone {
+    background-color: red;
+    grid-row: 92 / 130;
+    grid-column: 1 / 193;
+}
+
+logo { grid-area: logo; }
+
+
+
+/*
+좌측 상단바
+가로 20~300
+세로 20~30 
+
+로고
+가로 850~1040
+세로 10~70
+
+우측 상단바
+가로 1580~1890
+세로 10~60
+
+좌 배너
+가로 20~140
+세로 90~640
+
+우 배너
+가로 1800~1920
+세로 90~640
+
+윈도우 영역
+가로 160~1760
+세로 90~640
+
+검색바 
+가로 660~1180~1240
+세로 680~760
+
+태그 영역
+가로 520~1350
+세로 800~920
+
+디테일 영역
+가로 0~1920
+세로 950~
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        coding...
+    }
+*/
